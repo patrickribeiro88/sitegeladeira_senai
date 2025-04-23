@@ -72,3 +72,11 @@ function verificaMotivo(motivo) {
         }
     }
 }//Fim da função verificaMotivo
+
+//Assim que o documento HTML for carregado por completo...
+$(document).ready(function() {
+    //Carrega cabeçalho, menu e rodapé aos respectivos locais
+    $("header").load("/pages/site/general/cabecalho.html")
+    $("nav").load("/pages/site/general/menu.html")
+    $("footer").load("/pages/site/general/rodape.html")
+});
